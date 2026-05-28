@@ -3,7 +3,7 @@
 A professional, responsive, and modern portfolio application showcasing technical engineering skills, architectural design principles, and full-stack software capabilities. This project is optimized for performance, interactive user experiences, and seamless browser compatibility[cite: 1].
 
 ## Deployment Status
-Live Link:
+Live Link: https://dhruvilprotfilo-kappa.vercel.app/
 
 ## Technical Stack
 
