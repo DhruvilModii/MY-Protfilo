@@ -6,7 +6,7 @@ This project reflects my approach to building digital products that are simple, 
 
 🚀 Live Website
 
-https://dhruvilprotfilo-kappa.vercel.app/
+https://dhruvilprotfilo.vercel.app/
 
 🎯 Overview
 
