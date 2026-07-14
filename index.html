@@ -747,8 +747,13 @@
         }
 
         @keyframes floatBlob {
-            0% { transform: translate(-60%, -40%) scale(1); }
-            100% { transform: translate(-40%, -60%) scale(1.3); }
+            0% {
+                transform: translate(-60%, -40%) scale(1);
+            }
+
+            100% {
+                transform: translate(-40%, -60%) scale(1.3);
+            }
         }
 
         .contact-cta h2 {
@@ -811,8 +816,17 @@
         }
 
         @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 4px var(--dark-accent); opacity: 0.5; }
-            50% { box-shadow: 0 0 12px var(--dark-accent); opacity: 1; }
+
+            0%,
+            100% {
+                box-shadow: 0 0 4px var(--dark-accent);
+                opacity: 0.5;
+            }
+
+            50% {
+                box-shadow: 0 0 12px var(--dark-accent);
+                opacity: 1;
+            }
         }
 
         .magnetic-wrap {
@@ -1017,40 +1031,192 @@
             </h2>
         </div>
 
-        <!-- Giriraj Marketing -->
-        <div class="case-study" style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.1); background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.01) 100%);">
-            <div class="cs-visual glass" style="padding: 2rem; background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);">
-                <img src="giriraj-logo.png" alt="Giriraj Marketing Platform"
-                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 15px 25px rgba(0,0,0,0.06));"
-                    onmouseover="this.style.transform='scale(1.06)'" 
-                    onmouseout="this.style.transform='scale(1)'"
+        <!-- NEW: Giriraj Marketing -->
+        <div class="case-study"
+            style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.15); background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(247,244,235,0.1) 100%);">
+            <div class="cs-visual glass"
+                style="padding: 2.5rem; background: radial-gradient(circle at center, #ffffff 0%, #f0f2f5 100%);">
+                <img src="giriraj-marketing.png" alt="Giriraj Marketing Website Preview"
+                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));"
+                    onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
                     loading="lazy">
                 <div style="position: absolute; top: 20px; right: 20px; z-index: 2;">
-                    <span class="tag" style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.2); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
+                    <span class="tag"
+                        style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.25); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
                 </div>
             </div>
             <div class="cs-info">
-                <h3 style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">Giriraj Marketing</h3>
-                <p class="cs-description" style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">A modern enterprise technology platform helping businesses accelerate growth through software licensing, cloud infrastructure, cybersecurity, and digital transformation solutions.</p>
-                
-                <div class="cs-meta" style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.03); border: 1px solid rgba(49, 56, 82, 0.06); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
-                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Primary Tech</label>
-                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite, Tailwind CSS, Framer Motion, Node.js, Vercel</p>
+                <h3
+                    style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #4f46e5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">
+                    Giriraj Marketing</h3>
+                <p class="cs-description"
+                    style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">A modern
+                    enterprise technology platform helping businesses accelerate growth through software licensing,
+                    cloud infrastructure, cybersecurity, and digital transformation solutions.</p>
+
+                <div class="cs-meta"
+                    style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.02); border: 1px solid rgba(49, 56, 82, 0.08); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Primary
+                            Tech</label>
+                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite,
+                            Tailwind CSS, Framer Motion, Node.js, Vercel</p>
                     </div>
-                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Key Feature</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Enterprise Consultation System with Automated Lead Capture, Email Notifications, and CRM Workflow Integration.</p>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Key
+                            Feature</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Enterprise
+                            Consultation System with Automated Lead Capture, Email Notifications, and CRM Workflow
+                            Integration.</p>
                     </div>
-                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Streamlined client acquisition, automated business inquiries, and enhanced operational efficiency through intelligent workflow automation.</p>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Streamlined client
+                            acquisition, automated business inquiries, and enhanced operational efficiency through
+                            intelligent workflow automation.</p>
                     </div>
-                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium enterprise-grade UI/UX featuring responsive design, interactive animations, and a seamless consultation experience across all devices.</p>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium
+                            enterprise-grade UI/UX featuring responsive design, interactive animations, and a seamless
+                            consultation experience across all devices.</p>
                     </div>
                 </div>
-                
+
                 <div class="btn-group" style="margin-top: 2rem;">
-                    <a href="https://www.girirajmktg.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(49, 56, 82, 0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
-                        Project Demo <i data-lucide="external-link" style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
+                    <a href="https://www.girirajmktg.com/" target="_blank" rel="noopener noreferrer"
+                        style="display: inline-flex; align-items: center; gap: 10px; padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; color: var(--dark-accent); background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(49, 56, 82, 0.15); box-shadow: 0 8px 32px rgba(49, 56, 82, 0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); text-decoration: none;"
+                        onmouseover="this.style.boxShadow='0 15px 40px rgba(49, 56, 82, 0.15)'; this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.7)';"
+                        onmouseout="this.style.boxShadow='0 8px 32px rgba(49, 56, 82, 0.08)'; this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.4)';">
+                        View Live Website <i data-lucide="external-link"
+                            style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: KK Tech Solutions -->
+        <div class="case-study"
+            style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.15); background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(247,244,235,0.1) 100%);">
+            <div class="cs-visual glass"
+                style="padding: 2.5rem; background: radial-gradient(circle at center, #ffffff 0%, #f0f2f5 100%);">
+                <img src="/MY-Protfilo-main/kk-tech-logO.png" alt="KK Tech Solutions Website Preview"
+                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));"
+                    onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
+                    loading="lazy">
+                <div style="position: absolute; top: 20px; right: 20px; z-index: 2;">
+                    <span class="tag"
+                        style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.25); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
+                </div>
+            </div>
+            <div class="cs-info">
+                <h3
+                    style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">
+                    KK Tech Solutions</h3>
+                <p class="cs-description"
+                    style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">An enterprise
+                    technology solutions provider helping businesses grow through cloud services, software licensing,
+                    server infrastructure, and digital transformation solutions.</p>
+
+                <div class="cs-meta"
+                    style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.02); border: 1px solid rgba(49, 56, 82, 0.08); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Primary
+                            Tech</label>
+                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite,
+                            Tailwind CSS, Framer Motion, Node.js, Vercel</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Key
+                            Feature</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Automated enterprise
+                            consultation system with lead capture, email notifications, and CRM integration.</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Simplifies client
+                            acquisition, streamlines business inquiries, and enhances operational efficiency through
+                            intelligent workflow automation.</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.65; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium
+                            enterprise-grade UI/UX featuring responsive design, modern animations, interactive
+                            technology ecosystems, and seamless performance across desktop, tablet, and mobile devices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="btn-group" style="margin-top: 2rem;">
+                    <a href="https://kk-tech-solutions-sooty.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        style="display: inline-flex; align-items: center; gap: 10px; padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; color: var(--dark-accent); background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(49, 56, 82, 0.15); box-shadow: 0 8px 32px rgba(49, 56, 82, 0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); text-decoration: none;"
+                        onmouseover="this.style.boxShadow='0 15px 40px rgba(49, 56, 82, 0.15)'; this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.7)';"
+                        onmouseout="this.style.boxShadow='0 8px 32px rgba(49, 56, 82, 0.08)'; this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.4)';">
+                        Project Demo <i data-lucide="external-link"
+                            style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Giriraj Marketing -->
+        <div class="case-study"
+            style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.1); background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.01) 100%);">
+            <div class="cs-visual glass"
+                style="padding: 2rem; background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);">
+                <img src="giriraj-logo.png" alt="Giriraj Marketing Platform"
+                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 15px 25px rgba(0,0,0,0.06));"
+                    onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"
+                    loading="lazy">
+                <div style="position: absolute; top: 20px; right: 20px; z-index: 2;">
+                    <span class="tag"
+                        style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.2); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
+                </div>
+            </div>
+            <div class="cs-info">
+                <h3
+                    style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">
+                    Giriraj Marketing</h3>
+                <p class="cs-description"
+                    style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">A modern
+                    enterprise technology platform helping businesses accelerate growth through software licensing,
+                    cloud infrastructure, cybersecurity, and digital transformation solutions.</p>
+
+                <div class="cs-meta"
+                    style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.03); border: 1px solid rgba(49, 56, 82, 0.06); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Primary
+                            Tech</label>
+                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite,
+                            Tailwind CSS, Framer Motion, Node.js, Vercel</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Key
+                            Feature</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Enterprise
+                            Consultation System with Automated Lead Capture, Email Notifications, and CRM Workflow
+                            Integration.</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Streamlined client
+                            acquisition, automated business inquiries, and enhanced operational efficiency through
+                            intelligent workflow automation.</p>
+                    </div>
+                    <div class="meta-item"><label
+                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium
+                            enterprise-grade UI/UX featuring responsive design, interactive animations, and a seamless
+                            consultation experience across all devices.</p>
+                    </div>
+                </div>
+
+                <div class="btn-group" style="margin-top: 2rem;">
+                    <a href="https://www.girirajmktg.com/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary"
+                        style="padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(49, 56, 82, 0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                        Project Demo <i data-lucide="external-link"
+                            style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
                     </a>
                 </div>
             </div>
@@ -1481,8 +1647,10 @@
                 <div class="magnetic-wrap" id="magnetic-wrap">
                     <div class="magnetic-content">
                         <div class="magnetic-tip">[ CLICK TO COPY TO CLIPBOARD ]</div>
-                        <button class="btn btn-primary magnetic-btn" id="email-copy-btn" style="padding: 1.5rem 3.5rem; font-size: 1.1rem; border: none; cursor: pointer;">
-                            <span id="email-text">dhruvil0409modi@gmail.com</span> <i data-lucide="mail" id="email-icon"></i>
+                        <button class="btn btn-primary magnetic-btn" id="email-copy-btn"
+                            style="padding: 1.5rem 3.5rem; font-size: 1.1rem; border: none; cursor: pointer;">
+                            <span id="email-text">dhruvil0409modi@gmail.com</span> <i data-lucide="mail"
+                                id="email-icon"></i>
                         </button>
                     </div>
                 </div>
@@ -1615,10 +1783,10 @@
 
             function renderMagnetic() {
                 const lerpFactor = 0.1;
-                
+
                 magneticX += (mouseX - magneticX) * lerpFactor;
                 magneticY += (mouseY - magneticY) * lerpFactor;
-                
+
                 const moveX = magneticX * 0.4;
                 const moveY = magneticY * 0.4;
 
@@ -1627,7 +1795,7 @@
                 } else {
                     magneticBtn.style.transform = `translate3d(0px, 0px, 0)`;
                 }
-                
+
                 requestAnimationFrame(renderMagnetic);
             }
             renderMagnetic();
@@ -1638,12 +1806,12 @@
                 navigator.clipboard.writeText("dhruvil0409modi@gmail.com").then(() => {
                     const emailText = document.getElementById('email-text');
                     const emailIcon = document.getElementById('email-icon');
-                    
+
                     const originalText = emailText.innerText;
-                    
+
                     emailText.innerText = "✓ Email Address Copied!";
                     if (emailIcon) emailIcon.style.display = "none";
-                    
+
                     setTimeout(() => {
                         emailText.innerText = originalText;
                         if (emailIcon) emailIcon.style.display = "inline-block";
@@ -1661,18 +1829,18 @@
                 const rect = contactCard.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
-                
+
                 const centerX = rect.width / 2;
                 const centerY = rect.height / 2;
-                
+
                 // Max rotation 4 degrees for subtle premium feel
                 const rotateX = ((y - centerY) / centerY) * -4;
                 const rotateY = ((x - centerX) / centerX) * 4;
-                
+
                 contactCard.style.transform = `perspective(1500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.01, 1.01, 1.01)`;
                 contactCard.style.transition = 'none';
             });
-            
+
             contactCard.addEventListener('mouseleave', () => {
                 contactCard.style.transform = `perspective(1500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
                 contactCard.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
