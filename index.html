@@ -1018,28 +1018,40 @@
         </div>
 
         <!-- Giriraj Marketing -->
-        <div class="case-study">
-            <div class="cs-visual glass">
-                <img src="/giriraj-logo.png" alt="Giriraj Marketing Platform"
-                    style="width: 100%; height: 100%; object-fit: contain; background-color: #fff;">
-                <div style="position: absolute; top: 20px; right: 20px;"><span class="tag">Enterprise</span></div>
+        <div class="case-study" style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.1); background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.01) 100%);">
+            <div class="cs-visual glass" style="padding: 2rem; background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);">
+                <img src="giriraj-logo.png" alt="Giriraj Marketing Platform"
+                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 15px 25px rgba(0,0,0,0.06));"
+                    onmouseover="this.style.transform='scale(1.06)'" 
+                    onmouseout="this.style.transform='scale(1)'"
+                    loading="lazy">
+                <div style="position: absolute; top: 20px; right: 20px; z-index: 2;">
+                    <span class="tag" style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.2); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
+                </div>
             </div>
             <div class="cs-info">
-                <h3>Giriraj Marketing</h3>
-                <p class="cs-description">A modern enterprise solutions platform connecting businesses with software licensing, cloud infrastructure, cybersecurity, and digital transformation services through an intelligent consultation workflow.</p>
-                <div class="cs-meta">
-                    <div class="meta-item"><label>Primary Tech</label>
-                        <p>React, Vite, Tailwind CSS, Framer Motion, Vercel</p>
+                <h3 style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">Giriraj Marketing</h3>
+                <p class="cs-description" style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">A modern enterprise technology platform helping businesses accelerate growth through software licensing, cloud infrastructure, cybersecurity, and digital transformation solutions.</p>
+                
+                <div class="cs-meta" style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.03); border: 1px solid rgba(49, 56, 82, 0.06); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
+                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Primary Tech</label>
+                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite, Tailwind CSS, Framer Motion, Node.js, Vercel</p>
                     </div>
-                    <div class="meta-item"><label>Key Feature</label>
-                        <p>AI-Assisted Consultation & Lead Automation</p>
+                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Key Feature</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Enterprise Consultation System with Automated Lead Capture, Email Notifications, and CRM Workflow Integration.</p>
                     </div>
-                    <div class="meta-item"><label>Impact</label>
-                        <p>Automated Lead Capture, Email Notifications & CRM Workflow</p>
+                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Streamlined client acquisition, automated business inquiries, and enhanced operational efficiency through intelligent workflow automation.</p>
                     </div>
-                    <div class="meta-item"><label>Interface</label>
-                        <p>Premium Enterprise UI/UX Experience</p>
+                    <div class="meta-item"><label style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
+                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium enterprise-grade UI/UX featuring responsive design, interactive animations, and a seamless consultation experience across all devices.</p>
                     </div>
+                </div>
+                
+                <div class="btn-group" style="margin-top: 2rem;">
+                    <a href="https://www.girirajmktg.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(49, 56, 82, 0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                        Project Demo <i data-lucide="external-link" style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
+                    </a>
                 </div>
             </div>
         </div>
