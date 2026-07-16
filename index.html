@@ -256,7 +256,7 @@
         .nav-links a.active::after {
             width: 100%;
         }
-        
+
         .nav-actions {
             display: flex;
             gap: 1.5rem;
@@ -277,7 +277,7 @@
             color: var(--dark-accent);
             transition: var(--transition-smooth);
         }
-        
+
         .icon-btn:hover {
             background: rgba(194, 203, 212, 0.6);
             transform: scale(1.05);
@@ -305,7 +305,7 @@
             padding: 5px;
             z-index: 2002;
         }
-        
+
         .close-menu-btn {
             position: absolute;
             top: 2rem;
@@ -330,7 +330,7 @@
             justify-content: center;
             align-items: center;
             transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+            box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         }
 
         .mobile-menu-overlay.active {
@@ -356,7 +356,7 @@
             transition: color 0.3s;
             display: block;
         }
-        
+
         .mobile-nav-links a:hover {
             color: var(--secondary-soft);
         }
@@ -1037,7 +1037,7 @@
             .nav-links {
                 display: none;
             }
-            
+
             .hamburger-btn {
                 display: flex;
                 align-items: center;
@@ -1078,7 +1078,7 @@
                 font-size: clamp(2.5rem, 8vw, 3.5rem);
                 margin-bottom: 1rem;
             }
-            
+
             .hero p {
                 font-size: 1.1rem;
                 margin-bottom: 2rem;
@@ -1096,18 +1096,19 @@
                 width: 100%;
                 justify-content: center;
             }
-            
+
             .hero-btn-group,
             .btn-group {
                 flex-direction: column;
                 width: 100%;
                 gap: 15px;
             }
-            
+
             .get-in-touch-btn {
-                display: none; /* Hide get in touch on very small screens to save space */
+                display: none;
+                /* Hide get in touch on very small screens to save space */
             }
-            
+
             .cs-meta {
                 grid-template-columns: 1fr;
             }
@@ -1118,7 +1119,7 @@
             .hero h1 {
                 font-size: clamp(2rem, 10vw, 2.8rem);
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
@@ -1126,12 +1127,12 @@
             .skills-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .magnetic-wrap {
                 padding: 10px;
                 margin: 0;
             }
-            
+
             #email-copy-btn {
                 padding: 1rem 1.5rem !important;
                 font-size: 0.95rem !important;
@@ -1196,11 +1197,17 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="container hero-content">
-            <h1 class="fade-in">Turning ideas into <br><span class="outline-text">impactful</span> digital <br>experiences.</h1>
-            <p class="fade-in">Hi, I'm <strong>Dhruvil Modi</strong>. A passionate Software Developer focused on<br>building clean, intuitive, and AI-driven web applications.</p>
+            <h1 class="fade-in">Turning ideas into <br><span class="outline-text">impactful</span> digital
+                <br>experiences.
+            </h1>
+            <p class="fade-in">Hi, I'm <strong>Dhruvil Modi</strong>. A passionate Software Developer focused
+                on<br>building clean, intuitive, and AI-driven web applications.</p>
             <div class="fade-in hero-btn-group" style="display: flex; gap: 15px; justify-content: center;">
-                <a href="#projects" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.05rem; border: none;">View Projects <i data-lucide="arrow-right" style="width: 18px; margin-left: 5px;"></i></a>
-                <a href="https://github.com/DhruvilModii" target="_blank" class="btn btn-secondary" style="padding: 1rem 2.5rem; font-size: 1.05rem; background: rgba(194, 203, 212, 0.4); backdrop-filter: blur(10px); border: none; font-weight: 600;">GitHub</a>
+                <a href="#projects" class="btn btn-primary"
+                    style="padding: 1rem 2rem; font-size: 1.05rem; border: none;">View Projects <i
+                        data-lucide="arrow-right" style="width: 18px; margin-left: 5px;"></i></a>
+                <a href="https://github.com/DhruvilModii" target="_blank" class="btn btn-secondary"
+                    style="padding: 1rem 2.5rem; font-size: 1.05rem; background: rgba(194, 203, 212, 0.4); backdrop-filter: blur(10px); border: none; font-weight: 600;">GitHub</a>
             </div>
         </div>
     </section>
@@ -1254,7 +1261,7 @@
             style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.15); background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(247,244,235,0.1) 100%);">
             <div class="cs-visual glass"
                 style="padding: 2.5rem; background: radial-gradient(circle at center, #ffffff 0%, #f0f2f5 100%);">
-                <img src="giriraj-logo.png" alt="Giriraj Marketing Website Preview"
+                <img src="giriraj.png" alt="Giriraj Marketing Website Preview"
                     style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 20px 30px rgba(0,0,0,0.08));"
                     onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
                     loading="lazy">
@@ -1377,68 +1384,6 @@
             </div>
         </div>
 
-        <!-- Giriraj Marketing -->
-        <div class="case-study"
-            style="position: relative; overflow: hidden; border: 1px solid rgba(49, 56, 82, 0.1); background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.01) 100%);">
-            <div class="cs-visual glass"
-                style="padding: 2rem; background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);">
-                <img src="giriraj-logo.png" alt="Giriraj Marketing Platform"
-                    style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); filter: drop-shadow(0 15px 25px rgba(0,0,0,0.06));"
-                    onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'"
-                    loading="lazy">
-                <div style="position: absolute; top: 20px; right: 20px; z-index: 2;">
-                    <span class="tag"
-                        style="background: var(--dark-accent); color: var(--primary-light); box-shadow: 0 4px 15px rgba(49, 56, 82, 0.2); font-weight: 800; letter-spacing: 1.5px;">ENTERPRISE</span>
-                </div>
-            </div>
-            <div class="cs-info">
-                <h3
-                    style="font-weight: 800; letter-spacing: -0.5px; font-size: 2.5rem; background: linear-gradient(135deg, var(--dark-accent) 0%, #6366f1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.8rem;">
-                    Giriraj Marketing</h3>
-                <p class="cs-description"
-                    style="font-size: 1.05rem; line-height: 1.7; font-weight: 500; margin-bottom: 2rem;">A modern
-                    enterprise technology platform helping businesses accelerate growth through software licensing,
-                    cloud infrastructure, cybersecurity, and digital transformation solutions.</p>
-
-                <div class="cs-meta"
-                    style="display: grid; grid-template-columns: 1fr; gap: 1.25rem; background: rgba(49, 56, 82, 0.03); border: 1px solid rgba(49, 56, 82, 0.06); border-radius: 16px; padding: 1.5rem; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">
-                    <div class="meta-item"><label
-                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Primary
-                            Tech</label>
-                        <p style="color: var(--dark-accent); font-weight: 700; font-size: 0.95rem;">React, Vite,
-                            Tailwind CSS, Framer Motion, Node.js, Vercel</p>
-                    </div>
-                    <div class="meta-item"><label
-                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Key
-                            Feature</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Enterprise
-                            Consultation System with Automated Lead Capture, Email Notifications, and CRM Workflow
-                            Integration.</p>
-                    </div>
-                    <div class="meta-item"><label
-                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Impact</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Streamlined client
-                            acquisition, automated business inquiries, and enhanced operational efficiency through
-                            intelligent workflow automation.</p>
-                    </div>
-                    <div class="meta-item"><label
-                            style="color: var(--dark-accent); opacity: 0.6; font-size: 0.7rem; letter-spacing: 1.2px;">Interface</label>
-                        <p style="color: var(--dark-accent); font-weight: 600; font-size: 0.95rem;">Premium
-                            enterprise-grade UI/UX featuring responsive design, interactive animations, and a seamless
-                            consultation experience across all devices.</p>
-                    </div>
-                </div>
-
-                <div class="btn-group" style="margin-top: 2rem;">
-                    <a href="https://www.girirajmktg.com/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary"
-                        style="padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(49, 56, 82, 0.15); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
-                        Project Demo <i data-lucide="external-link"
-                            style="width: 18px; height: 18px; stroke-width: 2.5;"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
 
         <!-- FinWise AI -->
         <div class="case-study">
@@ -1910,8 +1855,8 @@
             document.body.style.overflow = '';
         }
 
-        if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
-        if(closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
+        if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
         mobileLinks.forEach(link => {
             link.addEventListener('click', closeMenu);
         });
