@@ -1146,6 +1146,139 @@
             }
         }
 
+        /* --- AWS CERTIFICATIONS --- */
+        .aws-certs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .aws-cert-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            min-height: 440px;
+            will-change: transform;
+        }
+
+        .aws-cert-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff9900, #ffc300);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .aws-cert-card:hover {
+            transform: translate3d(0, -10px, 0);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+        }
+
+        [data-theme="dark"] .aws-cert-card:hover {
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .aws-cert-card:hover::before {
+            opacity: 1;
+        }
+
+        .aws-cert-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .aws-cert-label {
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ff9900;
+            background: rgba(255, 153, 0, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .aws-verified-badge {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .aws-badge-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 270px;
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+
+        /* Prevent Credly iframe container default overflow styles if any */
+        .aws-badge-container div {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 270px;
+        }
+
+        .aws-cert-name {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark-accent);
+            margin-top: 1rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 992px) {
+            .aws-certs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .aws-certs-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .aws-cert-card {
+                padding: 2rem 1.5rem;
+                min-height: 420px;
+            }
+            /* Disable translate hover lift on mobile for better UX */
+            .aws-cert-card:hover {
+                transform: none;
+            }
+        }
+
         .fade-in {
             will-change: transform, opacity;
         }
@@ -1165,6 +1298,7 @@
                 <li><a href="#projects">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#about">Experience</a></li>
+                <li><a href="#aws-certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
@@ -1190,6 +1324,7 @@
             <li><a href="#projects" class="mobile-link">Portfolio</a></li>
             <li><a href="#skills" class="mobile-link">Skills</a></li>
             <li><a href="#about" class="mobile-link">Experience</a></li>
+            <li><a href="#aws-certifications" class="mobile-link">Certifications</a></li>
             <li><a href="#contact" class="mobile-link">Contact</a></li>
         </ul>
     </div>
@@ -1840,6 +1975,54 @@
         </div>
     </section>
 
+    <!-- AWS Certifications Section -->
+    <section class="section container" id="aws-certifications">
+        <div style="margin-bottom: 4rem; text-align: center;">
+            <span class="tag" style="background: rgba(255, 153, 0, 0.15); color: #ff9900;">Credentials</span>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 10px;">AWS Certifications</h2>
+            <p style="font-size: 1.1rem; opacity: 0.75; margin-top: 10px; font-weight: 500;">Validated expertise in AWS Cloud, Architecture & AI</p>
+        </div>
+
+        <div class="aws-certs-grid">
+            <!-- Cert 1: AWS Certified Solutions Architect – Professional -->
+            <div class="aws-cert-card glass">
+                <div class="aws-cert-header">
+                    <span class="aws-cert-label">AWS Professional</span>
+                    <span class="aws-verified-badge"><i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Verified</span>
+                </div>
+                <div class="aws-badge-container">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9b582452-6f69-407e-ab6d-b16a4a828bb9" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <h3 class="aws-cert-name">AWS Certified Solutions Architect &ndash; Professional</h3>
+            </div>
+
+            <!-- Cert 2: AWS Certified Solutions Architect – Associate -->
+            <div class="aws-cert-card glass">
+                <div class="aws-cert-header">
+                    <span class="aws-cert-label">AWS Associate</span>
+                    <span class="aws-verified-badge"><i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Verified</span>
+                </div>
+                <div class="aws-badge-container">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a1fa7787-036b-40f6-a507-cf57f6b0cb5f" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <h3 class="aws-cert-name">AWS Certified Solutions Architect &ndash; Associate</h3>
+            </div>
+
+            <!-- Cert 3: AWS Certified AI Practitioner -->
+            <div class="aws-cert-card glass">
+                <div class="aws-cert-header">
+                    <span class="aws-cert-label">AWS Specialty</span>
+                    <span class="aws-verified-badge"><i data-lucide="shield-check" style="width: 12px; height: 12px;"></i> Verified</span>
+                </div>
+                <div class="aws-badge-container">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="081139d3-7da8-4483-82a1-b3a38f3dbcf3" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <h3 class="aws-cert-name">AWS Certified AI Practitioner</h3>
+            </div>
+        </div>
+        <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+    </section>
+
     <!-- Contact Section -->
     <section class="section container" id="contact">
         <div class="contact-cta glass" id="contact-card">
@@ -1966,11 +2149,11 @@
         }, observerOptions);
 
         // Safely hide elements only if JS is executing
-        document.querySelectorAll('.section, .skill-card, .case-study, .exp-item, .showcase-block').forEach((el, index) => {
+        document.querySelectorAll('.section, .skill-card, .case-study, .exp-item, .showcase-block, .aws-cert-card').forEach((el, index) => {
             el.classList.add('animated-hidden');
 
             // Stagger child elements dynamically
-            if (el.classList.contains('skill-card') || el.classList.contains('case-study')) {
+            if (el.classList.contains('skill-card') || el.classList.contains('case-study') || el.classList.contains('aws-cert-card')) {
                 el.style.transitionDelay = `${(index % 3) * 120}ms`;
             } else if (el.classList.contains('exp-item') || el.classList.contains('showcase-block')) {
                 el.style.transitionDelay = `${(index % 2) * 150}ms`;
